@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('models/heart_model.pkl')
+model = joblib.load('models/heart_treeModel.pkl')
 
 # Define expected feature order (13 features)
 FEATURES = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs',
